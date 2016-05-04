@@ -60,9 +60,9 @@ public class CAltaRentasParametros extends javax.swing.JFrame {
         jLRenActu = new javax.swing.JLabel();
         jTRentaActual = new javax.swing.JTextField();
         jLFeRenActu = new javax.swing.JLabel();
-        jDFechaRentaActual = new com.toedter.calendar.JDateChooser();
         Aceptar = new javax.swing.JButton();
         Cancelar = new javax.swing.JButton();
+        jDFechaRentaActual = new com.toedter.calendar.JDateChooser();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -90,16 +90,6 @@ public class CAltaRentasParametros extends javax.swing.JFrame {
         jLFeRenActu.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLFeRenActu.setForeground(new java.awt.Color(51, 51, 51));
         jLFeRenActu.setText("Fecha Renta Actual:");
-
-        jDFechaRentaActual.setDateFormatString("yyyy-MMM-dd");
-        jDFechaRentaActual.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
-                jDFechaRentaActualKeyPressed(evt);
-            }
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                jDFechaRentaActualKeyTyped(evt);
-            }
-        });
 
         Aceptar.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         Aceptar.setText("Aceptar");

@@ -116,15 +116,6 @@
         <Property name="text" type="java.lang.String" value="Fecha Renta Actual:"/>
       </Properties>
     </Component>
-    <Component class="com.toedter.calendar.JDateChooser" name="jDFechaRentaActual">
-      <Properties>
-        <Property name="dateFormatString" type="java.lang.String" value="yyyy-MMM-dd"/>
-      </Properties>
-      <Events>
-        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jDFechaRentaActualKeyPressed"/>
-        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="jDFechaRentaActualKeyTyped"/>
-      </Events>
-    </Component>
     <Component class="javax.swing.JButton" name="Aceptar">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
@@ -167,6 +158,8 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="CancelarActionPerformed"/>
         <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="CancelarKeyTyped"/>
       </Events>
+    </Component>
+    <Component class="com.toedter.calendar.JDateChooser" name="jDFechaRentaActual">
     </Component>
   </SubComponents>
 </Form>

@@ -109,6 +109,7 @@ public class CBusquedaRentas extends javax.swing.JFrame {
             ManipulaInterfaces.limpia(Tabla);
             //agregamos los titulos de las tablas
             DefaultTableModel modelo = new DefaultTableModel();
+            modelo.addColumn("id");
             modelo.addColumn("Fecha Actual");
             modelo.addColumn("Renta Actual");
             modelo.addColumn("Fecha Anterior");
@@ -116,7 +117,7 @@ public class CBusquedaRentas extends javax.swing.JFrame {
             Tabla.setModel(modelo);//las agregamos a la tabla
 
             //variables a ocupar
-            String datos[] = new String[4];
+            String datos[] = new String[5];
 
             ArrayList<Object> reg = new ArrayList();
             Conexion con = new Conexion();
@@ -137,9 +138,10 @@ public class CBusquedaRentas extends javax.swing.JFrame {
                     while (rs.next())
                     {
                         datos[0] = rs.getString(1);
-                        datos[1] = rs.getString(2);
-                        datos[2] = rs.getString(3);
-                        datos[3] = rs.getString(4);
+                        datos[1] = rs.getString(5);
+                        datos[2] = rs.getString(4);
+                        datos[3] = rs.getString(3);
+                        datos[4] = rs.getString(2);
                         modelo.addRow(datos);
                     }
 
